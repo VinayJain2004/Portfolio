@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/85e8684441.js"
+      crossorigin="anonymous"
+    ></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href ="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
+  <body>
+
+    <!-- Navbar & Header -->
+
+    <div class="header">
+      <div class="navbar">
+        <div class="navlogo">
+          <img src="./img/logo.png" alt="loading..." />
+        </div>
+
+        <!-- Hamburger-->
+
+    <div class="container"> 
+      <nav class="navbar links">
+
+         <div class="logo"><img src="" alt=""></div>
+
+         <ul class="nav-menu">
+           <a href="#">Home</a>
+           <a href="#">About</a>
+           <a href="#">Skills</a>
+           <a href="#">Projects</a>
+           <a href="#">Contact Me</a>
+           <a href="#">Resume</a>
+         </ul>
+         <div class="hamburger">
+            <span class="bars"></span>
+            <span class="bars"></span>
+            <span class="bars"></span>
+         </div>
+      </nav>
+   </div> 
+ 
+<script>
+
+const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".nav-menu");
+
+hamburger.addEventListener("click", () => {
+hamburger.classList.toggle("active");
+navMenu.classList.toggle("active");
+})
+
+document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", () => {
+hamburger.classList.remove("active");
+navMenu.classList.remove("active");
+}))
+</script>
+        <div class="navlinks">
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">Skills</a>
+          <a href="#">Projects</a>
+          <a href="#">Contact Me</a>
+          <a href="#"><button id="sign">Resume</button></a>
+        </div>
+      </div>
+      <div class="head">
+        <div class="headtext">
+          <h1>Hello!</h1>
+          <h2>I am VINAY JAIN</h2>
+          <p>
+            I am an ambitious and enthusiastic Graphic Designer, Web Developer and Coder.
+          </p>
+          <button>See More</button>
+        </div>
+        <div class="headimg">
+          <img src="./img/Photo.png" alt="loading..." />
+        </div>
+      </div>
+    </div>
+
+    <!-- About Us -->
+
+    <div class="aboutus">
+      <h1>ABOUT ME</h1>
+      <div class="about">
+        <div class="aimg">
+          <img src="./img/about.png" alt="loading..." />
+        </div>
+        <div class="atext">
+          <p>
+            I am an enthusiastic engineering student who values meticulous work, attention to detail, and cleanliness. In my free time, I enjoy exploring new musical genres and believe that music has the power to bring people together. As a budding developer, I am focused on learning front-end development with HTML, CSS, and JavaScript, while also refining my graphic design skills using Figma and Photoshop.
+          </p>
+          <button>Read More</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Skills -->
+    
+    <section id="skill">
+      <h1>MY SKILLS</h1>
+      <!------------------------------------------------>
+      <div id="left">
+          <p>
+              As an aspiring web developer, I'm eager to learn and embrace the world of digital creation. I'm familiar with the fundamentals of web development, including HTML, CSS, and JavaScript, and have even had the exciting opportunity to build my own website and create a simple game. My enthusiasm for coding and web development drives me to explore and grow, with a strong desire to make creative visions come to life in the digital realm.   
+          </p>
+      </div>
+      <!------------------------------------------------>
+      <div id="right">
+        
+        <!-- Tech Skills -->
+
+          <div class="box">
+              <h2>Technical Skills</h2>
+              <div class="technical-bars">
+                  <div class="skill-icon " id="skill-icon">
+                      <i class="fa-brands fa-html5" id="html"></i>
+                      <i class="fa-brands fa-css3-alt" id="css"></i>
+                      <i class="fa-brands fa-square-js" id="js"></i>
+                      <i class="fa-brands fa-figma" id="php"></i>
+                      <i class='bx bxl-c-plus-plus' id="cpp"></i>
+                      <i class="fa-brands fa-python" id="python"></i>
+                  </div>
+                  
+                  <div class="bar skill-active" id="skill-html">
+                      <div class="info">
+                          <span>HTML</span>
+                      </div>
+                      <div class="progress-line html" >
+                          <span></span>
+                      </div>
+                  </div>
+                  <div class="bar" id="skill-css">
+                      <div class="info">
+                          <span>CSS</span>
+                      </div>
+                      <div class="progress-line css">
+                         <span></span>
+                     </div>
+                  </div>
+                  <div class="bar" id="skill-js">
+                      <div class="info">
+                          <span>JavaScript</span>
+                      </div>
+                      <div class="progress-line javascript">
+                          <span></span>
+                      </div>
+                  </div>
+                  <div class="bar" id="skill-php">
+                      <div class="info">
+                          <span>FIGMA</span>
+                      </div>
+                      <div class="progress-line php">
+                          <span></span>
+                      </div>
+                  </div>
+                  <div class="bar" id="skill-cpp">
+                      <div class="info">
+                          <span>C++</span>
+                      </div>
+                      <div class="progress-line cpp">
+                          <span></span>
+                      </div>
+                  </div>
+                  <div class="bar" id="skill-python">
+                     <div class="info">
+                         <span>Python</span>
+                      </div>
+                      <div class="progress-line python">
+                          <span></span>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <!-- Pro Tech Skills -->
+
+          <div class="box">
+              <h2>Professional Skills</h2>
+              <div id="buttons">
+                  <button class="active" id="Creativity">Creativity</button>
+                  <button id="Teamwork">Teamwork</button>
+                  <button id="ProblemSolving">Problem Solving</button>
+                  <button id="Communication">Communication</button>
+              </div>
+              <div class="radial-bars">
+                  <div class="radial-bar">
+                      <svg x="0px" y="0px" viewBox="0 0 200 200">
+                          <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                          <circle class="path path-1" cx="100" cy="100" r="80"></circle>
+                      </svg>
+                      <div class="percentage">90%</div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+
+  <!-- Projects -->
+
+  <section id="project">
+      <h1><span>PROJECTS</span></h1>
+      <div class="P-container">
+      <div class="P-content">
+          <div class="project-box">
+              <img src="./img/covid.png" alt="loading...">
+              <div class="project-layer">
+                  <h2>Web UI : Covid-19</h2>
+                  <p>Discover my seamless UI design project an ultimate COVID-19 information hub. Click the link below.</p>
+                  <a href="https://www.figma.com/proto/LmrRuaPrv1rPzxq4PktmSp/project?node-id=1-2" target="_blank"><i class='bx bx-link-external'></i></a>
+              </div>
+          </div>
+          <div class="project-box">
+              <img src="./img/weather.png" alt="loading...">
+              <div class="project-layer">
+                  <h2>WEATHER WEBSITE</h2>
+                  <p>Designed a Weather forecast website and also added Temperature converter in website.</p>
+                  <a href="https://github.com/VinayJain2004/Weather-Website" target="_blank"><i class='bx bx-link-external'></i></a>
+              </div>
+          </div>
+          <div class="project-box">
+              <img src="./img/netflix.png" alt="loading...">
+              <div class="project-layer">
+                  <h2>NETFLIX CLONE</h2>
+                  <p>Designed a Netflix home page using HTML, CSS and JavaScript.</p>
+                  <a href="https://vinayjain2004.github.io/Netflix-Homepage/" target="_blank"><i class='bx bx-link-external'></i></a>
+              </div>
+          </div>
+          <div class="project-box">
+              <img src="./img/health.png" alt="loading...">
+              <div class="project-layer">
+                  <h2>App : Healthy Fries</h2>
+                  <p>Explore "Healthy Fries", its visually appealing interface encourages healthy habits for overall well-being.</p>
+                  <a href="https://www.figma.com/file/NE6x4WzYO1yEiGhB3bJbsQ/Healthy-fries?type=design&node-id=0-1&mode=design&t=pvyH909V3mdZ8ynk-0" target="_blank"><i class='bx bx-link-external'></i></a>
+              </div>
+          </div>
+          <div class="project-box">
+              <img src="./img/snake.png" alt="loading...">
+              <div class="project-layer">
+                  <h2>SNAKE GAME</h2>
+                  <p>Designed a Snake Game using HTML, CSS and JavaScript.</p>
+                  <a href="https://vinayjain2004.github.io/Snake-Game/" target="_blank"><i class='bx bx-link-external'></i></a>
+              </div>
+          </div>
+          <div class="project-box">
+              <img src="./img/sonyliv.png" alt="loading...">
+              <div class="project-layer">
+                  <h2>SONY LIV WEBSITE</h2>
+                  <p>Immerse yourself in my HTML and CSS coding skills with a Sony Liv website clone project.</p>
+                  <a href="https://vinayjain2004.github.io/SonyLiv/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              </div>
+          </div>
+          <div class="project-box">
+              <img src="./img/logodesign.png" alt="loading...">
+              <div class="project-layer">
+                  <h2>LOGO DESIGNING</h2>
+                  <p>Experience the art of logo design through my project created using Photoshop.</p>
+                  <a href="https://drive.google.com/drive/folders/15rBFnGcTyeYcgKIhJ87Ln0w9nH1uecdv" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              </div>
+          </div>
+          <div class="project-box">
+              <img src="./img/mockup.png" alt="loading...">
+              <div class="project-layer">
+                  <h2>MOCK-UP DESIGN</h2>
+                  <p>Experience the art of visualizing and presenting designs in realistic and engaging ways.</p>
+                  <a href="https://drive.google.com/drive/folders/15rBFnGcTyeYcgKIhJ87Ln0w9nH1uecdv" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              </div>
+          </div>
+      </div>
+      </div>
+  </section>
+    
+    <!-- Footer -->
+
+    <div class="sfoot">
+      <div class="footer">
+        <div class="footer-logo">
+          <img src="./img/logo.png" alt="loading..." />
+          <p>
+            Thank you for visiting my personal portfolio website. I hope you enjoyed exploring my work. Feel free to reach out and connect!"
+          </p>
+          <div class="media">
+            <a href="https://www.instagram.com/vinay_jain_10/"><i class="fab fa-2x fa-instagram"></i></a>
+            <a href="https://x.com/VINAYJA50477387?t=s1thTY0i-JroMJRniHL1sA&s=09"><i class="fab fa-2x fa-twitter"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=61554660406044&mibextid=ZbWKwL"><i class="fab fa-2x fa-facebook"></i></a>
+            <a href="https://www.linkedin.com/in/vinayjain04?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fab fa-2x fa-linkedin"></i></a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <div class="footer-link">
+            <p>Useful Links</p>
+            <a href="#">Home</a>
+            <a href="#">About Me</a>
+            <a href="#">Skills</a>
+            <a href="#">Projects</a>
+            <a href="#">Contac Me</a>
+          </div>
+
+          <div class="footer-link">
+            <p>Contact Details</p>
+            <a href="#">vinayjain0410@gmail.com</a>
+            <a href="#">+919165223111</a>
+            <a href="#">+919406977575</a>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <div class="sftext">
+        <p>All Rights are reserved to Vinay</p>
+      </div>
+    </div>
+
+    <!-- Script -->
+
+    <script src="script.js"></script>
+
+  </body>
+</html>
